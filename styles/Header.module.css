@@ -1,0 +1,63 @@
+.navBar {
+  height: 80px;
+  width: 100vw;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logoWrapper {
+
+}
+
+.logo {
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.linksWrapper {
+  margin-right: 10px;
+}
+
+.links {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.linkItem {
+  font-size: 1.5rem;
+  color:white;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+}
+
+.linkItem:hover {
+  background-color: rgb(216, 40, 9);
+  border-radius: 4px;
+}
+
+.cart {
+  height: 35px;
+  fill: #202020;
+}
+
+.cartWrapper {
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.total {
+  margin: 0 0 0 10px;
+  padding: 0;
+}
