@@ -16,13 +16,27 @@
   flex-wrap: wrap;
   margin: 70px 0 0 50px;
   padding: 0;
+  width: 500px;
 }
 
 .heroText {
   margin: 0;
-  margin: 0 0 10px 0;
+  margin: 5px 0 5px 0;
   padding: 0 20px;
   font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-5deg);
+  background-color: #7f2c16;
+  width: fit-content;
+}
+
+.heroTextB {
+  margin: 0;
+  margin: 10px 0 5px 0;
+  padding: 0 20px;
+  font-size: 3rem;
+  font-weight: bold;
   color: white;
   transform: rotate(-5deg);
   background-color: #7f2c16;
