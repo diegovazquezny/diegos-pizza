@@ -1,0 +1,47 @@
+.root {
+  background-image: url('../public/hero-oven.jpg');
+  height: 500px;
+}
+
+.heroTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.heroTextWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 70px 0 0 50px;
+  padding: 0;
+}
+
+.heroText {
+  margin: 0;
+  margin: 0 0 10px 0;
+  padding: 0 20px;
+  font-size: 3rem;
+  color: white;
+  transform: rotate(-5deg);
+  background-color: #7f2c16;
+  width: fit-content;
+}
+
+.heroBtn {
+  height: 60px;
+  width: 230px;
+  background-color: green;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.heroBtn:hover {
+  background-color: rgb(56, 79, 12);
+}
