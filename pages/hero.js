@@ -15,8 +15,8 @@ export default function Hero() {
           <span className={styles.heroText}>{line1}</span>
           <span className={styles.heroText}>{line2}</span>
           <span className={styles.heroTextB}>{line3}</span>
+          <button className={styles.heroBtn}>ORDER NOW</button>
         </div>
-        <button className={styles.heroBtn}>ORDER NOW</button>
       </div>
     </div>
   )

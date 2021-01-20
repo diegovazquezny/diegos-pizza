@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  overflow: hidden;
 }
 
 .logoWrapper {
@@ -60,4 +60,19 @@
 .total {
   margin: 0 0 0 10px;
   padding: 0;
+}
+
+@media (max-width: 610px) {
+  .logo {
+    display: none;
+  }
+
+  .linksWrapper {
+    width: 100vw;
+  }
+
+  .links {
+    padding: 0;
+    width: 100vw;
+  }
 }
