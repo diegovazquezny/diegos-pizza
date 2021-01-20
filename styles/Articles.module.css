@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  width: 1350px;
+  margin: 60px auto 60px auto;
+  justify-content: space-between;
+}
+
+.article {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+}
+
+.articleImg {
+  background-color: blue;
+  height: 200px;
+  width: 315px;
+}
+
+.articleText {
+  margin: 0 18px 20px 18px; 
+}
+
+.articleButton {
+  background-color: white;
+  color: #141414;
+  border: 0px;
+  cursor: pointer;
+  font-weight: bold;  
+  text-decoration: underline;
+  font-size: 1.1rem;
+  height: 40px;
+  width: 140px;
+  border-radius: 4px;
+}
+
+.articleButton:hover {
+  background-color: rgb(219, 219, 219);
+}

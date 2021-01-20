@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import Header from './header';
 import Hero from './hero';
 import CarouselMUI from './carousel';
+import Articles from './articles';
+import Footer from './footer';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Header/>
       <Hero/>
       <CarouselMUI/>
+      <Articles/>
+      <Footer/>
     </div>
   )
 }

@@ -13,6 +13,7 @@
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-material-ui-carousel": "^2.1.2"
+    "react-material-ui-carousel": "^2.1.2",
+    "resize-observer-polyfill": "^1.5.1"
   }
 }
