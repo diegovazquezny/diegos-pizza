@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@material-ui/core';
-import styles from '../styles/Carousel.module.css';
-import useResizeObserver from '../utils/useResizeObserver';
+import styles from '../../styles/Carousel.module.css';
+import useResizeObserver from '../../utils/useResizeObserver';
 
 export default function CarouselMUI(props) {
   const [itemsPerPage, setItemsPerPage] = useState(3);
