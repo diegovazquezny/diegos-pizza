@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Hero.module.css'
+import styles from '../../styles/Hero.module.css'
 
 const line1 = 'TRY ONE OF OUR';
 const line2 = 'TASTY SPECIALTY';

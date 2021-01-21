@@ -54,4 +54,8 @@
     margin: 60px auto 60px auto;
     justify-content: center;
   }
+
+  .article {
+    margin: 10px;
+  }
 }
