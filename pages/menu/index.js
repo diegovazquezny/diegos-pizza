@@ -1,5 +1,10 @@
 import Link from 'next/link';
 import Header from '../../components/home/header';
+import MenuCategory from '../../components/menu/menuCategory';
+
+const name = 'Pepperoni Pizza';
+const price = 12.99;
+const description = 'Large pepperoni pizza (toppings cost extra)';
 
 export default function Menu() {
   return (
@@ -7,9 +12,10 @@ export default function Menu() {
       <Header/>
       <Link href='/'>
         <a>
-          Home
+          Back Home
         </a>
       </Link>
+      <MenuCategory/>
     </div>
   )
 }

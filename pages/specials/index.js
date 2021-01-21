@@ -7,7 +7,7 @@ export default function Specials() {
       <Header/>
       <Link href='/'>
         <a>
-          Home
+          Back Home
         </a>
       </Link>
     </div>

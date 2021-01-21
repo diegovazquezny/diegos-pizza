@@ -1,0 +1,23 @@
+.root {
+  width: 1200px;
+  display: flex;
+  border: 1px solid rgb(228, 228, 228);
+  justify-content: center;
+  margin: auto;
+}
+
+.categoryContainer {
+  margin: auto;
+}
+
+.menuItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.categoryName {
+  margin: 0 0 0 87px;
+  font-size: 2rem;
+}

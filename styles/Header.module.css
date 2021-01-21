@@ -8,9 +8,9 @@
   overflow: hidden;
 }
 
-.logoWrapper {
+/* .logoWrapper {
 
-}
+} */
 
 .logo {
   margin: 0 0 0 10px;
@@ -20,7 +20,7 @@
 }
 
 .linksWrapper {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .links {
