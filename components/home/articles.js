@@ -15,7 +15,7 @@ const articles = [
     id: 'dess'
   },
   {
-    title: 'The Best Sandwiches',
+    title: 'Delicous Sandwiches',
     description: `
       Not in the mood for pizza? We got you covered. Our diverse selection
       of sandwiches will definitely hit the spot.
@@ -25,12 +25,12 @@ const articles = [
     id: 'sand'
   },
   {
-    title: 'Every Day Specials',
-    description: `Save big bucks with our daily specials. Feed your family
-      and friends or treat yourself.`,
-    img: './articles/wings.png',
+    title: 'Ice Cold Drinks',
+    description: `Try our freshly brewed iced coffee, our amazing freshly squeezed orange juice,
+      or a thirst quenching soft drink.`,
+    img: './articles/icedcoffee.png',
     url: '',
-    id: 'spec'
+    id: 'drink'
   }
 ];
 

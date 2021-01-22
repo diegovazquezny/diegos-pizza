@@ -10,6 +10,7 @@
 .categoryContainer {
   margin: auto;
   margin-bottom: 20px;
+
 }
 
 .menuItemsContainer {
@@ -19,7 +20,33 @@
   margin: 10px 0 10px 0;
 }
 
+.menuItemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
 .categoryName {
-  margin: 0 0 0 87px;
-  font-size: 2rem;
+  margin: 0 0 0 0px;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .root {
+    width: 100%;
+  }
+  .categoryName {
+    margin-left: 20px;
+  }
+  .categoryContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .root {
+    margin: 0; 
+  }
 }

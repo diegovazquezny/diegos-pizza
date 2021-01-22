@@ -13,18 +13,20 @@ export default function FullMenu() {
         menuList.map((type, i) => {
           return (
             <div className={styles.categoryContainer} key={`t${i}`} id={type.id}>
-              <h3 className={styles.categoryName}>{type.category}</h3>
               <div className={styles.menuItemsContainer}>
-                {type.options.map((option, i) => {
-                  return (
-                    <MenuItem
-                      name={option.name}
-                      price={'$' + option.price}
-                      description={option.description}
-                      key={`o${i}`}
-                    />
-                  )
-                })}
+                <h3 className={styles.categoryName}>{type.category}</h3>
+                <div className={styles.menuItemsWrapper}>
+                  {type.options.map((option, i) => {
+                    return (
+                      <MenuItem
+                        name={option.name}
+                        price={'$' + option.price}
+                        description={option.description}
+                        key={`o${i}`}
+                      />
+                    )
+                  })}
+                </div>
               </div>
             </div>
           )
