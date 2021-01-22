@@ -1,13 +1,15 @@
 .root {
   width: 1200px;
   display: flex;
+  flex-direction: column;
   border: 1px solid rgb(228, 228, 228);
   justify-content: center;
-  margin: auto;
+  margin: 20px auto 20px auto;
 }
 
 .categoryContainer {
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .menuItemsContainer {

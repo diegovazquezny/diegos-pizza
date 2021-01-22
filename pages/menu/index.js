@@ -1,21 +1,16 @@
 import Link from 'next/link';
 import Header from '../../components/home/header';
-import MenuCategory from '../../components/menu/menuCategory';
-
-const name = 'Pepperoni Pizza';
-const price = 12.99;
-const description = 'Large pepperoni pizza (toppings cost extra)';
+import FullMenu from '../../components/menu/fullMenu';
+import Footer from '../../components/home/footer';
+import MenuBanner from '../../components/menu/menuBanner'; 
 
 export default function Menu() {
   return (
-    <div>
+    <>
       <Header/>
-      <Link href='/'>
-        <a>
-          Back Home
-        </a>
-      </Link>
-      <MenuCategory/>
-    </div>
+      <MenuBanner/>
+      <FullMenu/>
+      <Footer/>
+    </>
   )
 }
