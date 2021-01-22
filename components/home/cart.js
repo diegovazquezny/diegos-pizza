@@ -6,7 +6,9 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 function EmptyCart() {
   return (
     <div className={styles.emptyCartContainer} >
-      <ShoppingBasketIcon fontSize='inherit'/>
+      <ShoppingBasketIcon 
+        fontSize='inherit'
+      />
       <p className={styles.emptyCartText}>Your cart is empty</p>
     </div>
   )
