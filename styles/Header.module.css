@@ -66,7 +66,7 @@
   display: none;
 }
 
-@media (max-width: 628px) {
+@media (max-width: 650px) {
 
   .linkItemLogo {
     margin: 0;
@@ -85,14 +85,14 @@
   .linksWrapper {
     display: flex;
     width: 100%;
-    margin: 0 20px 0 20px;
+    /* margin: 0 20px 0 20px; */
     padding: 0;
   }
 
   .links {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
   }
 
@@ -107,6 +107,8 @@
   }
 
   .cartWrapper {
+    /* background-color: #731009;
+    position: fixed; */
     padding: 0;
   }
 
