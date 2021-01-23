@@ -3,7 +3,7 @@ import Popover from '@material-ui/core/Popover';
 import styles from '../../styles/Header.module.css';
 import { cart } from '../home/svg';
 import Link from 'next/link';
-import Cart from '../home/cart';
+import Cart from '../cart/cart';
 import { connect } from 'react-redux';
 
 const mapStateToProps = ({

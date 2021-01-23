@@ -7,7 +7,7 @@
   height: 300px;
 }
 
-.emptyCartContainer {
+.cartContainer {
   font-size: 5rem;
   display: flex;
   flex-direction: column;
@@ -18,4 +18,35 @@
 .emptyCartText {
   font-size: 1.6rem;
   margin: 0;
+}
+
+.itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cartTitle {
+  font-size: 1.1rem;
+}
+
+.itemCount {
+  font-size: 1.1rem;
+}
+
+.itemName {
+  font-size: 1.1rem;
+}
+
+.itemPrice {
+  font-size: 1.1rem;
+}
+
+.orderSubtotalText {
+  font-size: 1.1rem;
+}
+
+.orderSubtotal {
+  font-size: 1.1rem;
 }
