@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../styles/MenuItem.module.css';
 import { Paper } from '@material-ui/core';
 import { connect } from 'react-redux';
-import * as actions from '../../actions/actions';
+import * as actions from '../../redux/actions/actions';
 
 const mapStateToProps = ({
   reducer: { total, order }
