@@ -25,7 +25,6 @@
 }
 
 .carouselImg {
-  background-color: blue;
   height: 200px;
   width: 315px;
 }
@@ -45,15 +44,15 @@
   font-weight: 600;
 }
 
+.carouselButton:hover {
+  background-color: rgb(56, 79, 12);
+}
+
 .carouselTitle, .carouselDescription, .carouselButton {
   margin: 5px 0 5px 0;
 }
 
 @media (max-width: 1350px) {
-  /* .root {
-    width: 900px;
-  }  */
-
   .container {
     width: 90%;
     margin: auto;
@@ -62,7 +61,6 @@
   .carouselPage {
     width: 900px;
     justify-content: center;
-
   }
 
   .carouselItem {
@@ -71,14 +69,9 @@
 }
 
 @media (max-width: 1210px) {
-  /* .root {
-    width: 900px;
-  }  */
-
   .carouselPage {
     width: 900px;
     justify-content: center;
-
   }
 
   .carouselItem {
@@ -87,14 +80,8 @@
 }
 
 @media (max-width: 900px) {
-  /* .root {
-    width: 100%;
-  }  */
-
   .carouselPage {
     width: 100%;
-    /* justify-content: center; */
-
   }
 
   .carouselItem {
@@ -103,14 +90,9 @@
 }
 
 @media (max-width: 820px) {
-  /* .root {
-    width: 500px;
-  }  */
-
   .carouselPage {
     width: 500px;
     justify-content: center;
-
   }
 
   .carouselItem {
@@ -119,10 +101,6 @@
 }
 
 @media (max-width: 495px) {
-  /* .root {
-    width: 100vw;
-  }  */
-
   .carouselPage {
     width: 100vw;
     justify-content: center;

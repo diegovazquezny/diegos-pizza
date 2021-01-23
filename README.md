@@ -1,7 +1,7 @@
 # Welcome to Diego's Pizza!
 > disclaimer: this is not a real pizzeria
 
-I built Diego's Pizza to showcase my ability to create responsive web applications with React, NextJS, and Material-UI.
+I built Diego's Pizza to showcase my ability to create responsive web applications with React, Redux, NextJS, and Material-UI.
 
 Feel free to clone the project and make it your own!
 
@@ -14,5 +14,6 @@ npm run dev
 
 ## Tech Stack
 * React
-* Next
+* Redux
+* NextJS
 * Material-UI

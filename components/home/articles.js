@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Articles.module.css';
 import { Paper } from '@material-ui/core';
-
+import Link from 'next/link';
 
 const articles = [
   {
@@ -11,7 +11,7 @@ const articles = [
       delicous dessert. Try our ice cream or our cookies.
     `,
     img: './articles/brownies.png',
-    url: '',
+    url: '/menu#desserts',
     id: 'dess'
   },
   {
@@ -21,7 +21,7 @@ const articles = [
       of sandwiches will definitely hit the spot.
     `,
     img: './articles/sandwich.png',
-    url: '',
+    url: '/menu#sandwiches',
     id: 'sand'
   },
   {
@@ -29,7 +29,7 @@ const articles = [
     description: `Try our freshly brewed iced coffee, our amazing freshly squeezed orange juice,
       or a thirst quenching soft drink.`,
     img: './articles/icedcoffee.png',
-    url: '',
+    url: '/menu#drinks',
     id: 'drink'
   }
 ];
@@ -55,11 +55,13 @@ export default function Articles() {
               >
                 {article.description}
               </p>
-              <button 
-                className={styles.articleButton}
-              >
-                Order Now
-              </button>
+              <Link href={article.url}>
+                <button 
+                  className={styles.articleButton}
+                >
+                  Order Now
+                </button>
+              </Link>
             </Paper>
           )
         })

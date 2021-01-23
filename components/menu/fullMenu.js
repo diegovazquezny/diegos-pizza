@@ -20,7 +20,7 @@ export default function FullMenu() {
                     return (
                       <MenuItem
                         name={option.name}
-                        price={'$' + option.price}
+                        price={option.price}
                         description={option.description}
                         key={`o${i}`}
                       />

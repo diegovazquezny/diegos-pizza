@@ -4,22 +4,23 @@ import styles from '../../styles/Header.module.css';
 import { cart } from '../home/svg';
 import Link from 'next/link';
 import Cart from '../home/cart';
+import { connect } from 'react-redux';
 
-const total = '$0.00'
+const mapStateToProps = ({
+  reducer: { total, order }
+}) => ({ total, order });
 
-const RightNav = () => {
+const RightNav = ({ total }) => {
   const [anchorEl, setAnchorEl] = useState(null);
-
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+  
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
 
   return (
     <>
@@ -56,7 +57,7 @@ const RightNav = () => {
         <li className={styles.linkItem}>
           <div className={styles.cartWrapper} onClick={handleClick}>
             {cart}
-            <p className={styles.total}>{total}</p>
+            <p className={styles.total}>${(total.toFixed(2))}</p>
           </div>
         </li>
       </ul>
@@ -81,4 +82,4 @@ const RightNav = () => {
   )
 }
 
-export default RightNav
+export default connect(mapStateToProps, null)(RightNav);

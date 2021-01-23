@@ -3,6 +3,7 @@ import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@material-ui/core';
 import styles from '../../styles/Carousel.module.css';
 import useResizeObserver from '../../utils/useResizeObserver';
+import Link from 'next/link';
 
 export default function CarouselMUI(props) {
   const [itemsPerPage, setItemsPerPage] = useState(3);
@@ -24,41 +25,42 @@ export default function CarouselMUI(props) {
       title: 'Try our Supreme',
       description: 'Fresh vegetables and pepperoni',
       img: '/carousel/supr.png',
-      url: '',
+      url: '/menu#pizza',
       id: 'vege'
     },
     {
       title: 'Meatzza Meatzza!',
       description: 'Packed with delicious protein',
       img: '/carousel/meat.png',
-      url: '',
+      url: '/menu#pizza',
       id: 'meat'
     },
     {
       title: 'Classic Pepperoni',
       description: 'So simple, so tasty',
       img: '/carousel/pepp.png',
-      url: '',
+      url: '/menu#pizza',
       id: 'pepp'
     },
     {
       title: `GrandMa's Pie`,
       description: 'A little slice of Italian home cooking',
       img: '/carousel/grma.png',
-      url: '',
+      url: '/menu#pizza',
       id: 'grma'
     },
     {
       title: 'Italian Margherita',
       description: 'Mouth watering elegance',
       img: '/carousel/marg.png',
-      url: ''
+      url: '/menu#pizza',
+      id :'marg'
     },
     {
       title: `Chef's Delight`,
       description: 'Peppers, onions, jalepeños, & chicken',
       img: '/carousel/chef.png',
-      url: '',
+      url: '/menu#pizza',
       id: 'chef'
     }
   ];
@@ -122,11 +124,13 @@ function Item(props)
       >
         {props.item.description}
       </p>
-      <button 
-        className={styles.carouselButton}
-      >
-        ORDER NOW
-      </button>
+      <Link href={props.item.url}>
+        <button 
+          className={styles.carouselButton}
+        >
+          ORDER NOW
+        </button>
+      </Link>
     </Paper>
   )
 }

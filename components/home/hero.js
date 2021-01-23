@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Hero.module.css'
+import Link from 'next/link';
 
 const line1 = 'TRY ONE OF OUR';
 const line2 = 'TASTY SPECIALTY';
@@ -15,7 +16,9 @@ export default function Hero() {
           <span className={styles.heroText}>{line1}</span>
           <span className={styles.heroText}>{line2}</span>
           <span className={styles.heroTextB}>{line3}</span>
-          <button className={styles.heroBtn}>ORDER NOW</button>
+          <Link href='/menu'>
+            <button className={styles.heroBtn}>ORDER NOW</button>
+          </Link>
         </div>
       </div>
     </div>
