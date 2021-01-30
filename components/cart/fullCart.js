@@ -5,6 +5,7 @@ import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
 import { useRouter } from 'next/router';
 import EmptyCart from './emptyCart';
+import CartTotal from './cartTotal';
 
 const mapStateToProps = ({
   reducer: { order }
@@ -36,6 +37,7 @@ function FullCart({order}) {
             <Table>
               <TableHead>
                 {generateCartItems()}
+                <CartTotal/>
               </TableHead>
             </Table>
             {router.route !== '/checkout' 

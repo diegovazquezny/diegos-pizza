@@ -16,6 +16,7 @@ function CartItem({ itemCount, itemName, itemPrice, itemID, removeItemFromCart }
       <TableCell align="right">{itemName}</TableCell>
       <TableCell align="right">
         <DeleteForeverIcon
+          className={styles.deleteButton}
           fontSize='small'
           onClick={() => removeItemFromCart({itemID, itemPrice})}  
         />

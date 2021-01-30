@@ -18,11 +18,11 @@ export default function Loading() {
 
   setTimeout(() => { 
     setLoaded(true);
-  }, 1000)
+  }, 750)
 
   return (
     <>
-      <input type="checkbox" id="check" className={styles.input}/>
+      <input type="checkbox" id="check" className={styles.input} checked={loaded}/>
         <label htmlFor="check" className={styles.label}>
           <div className={styles.checkIcon}>
         </div>

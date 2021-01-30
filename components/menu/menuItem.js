@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles/MenuItem.module.css';
 import { Paper } from '@material-ui/core';
 import { connect } from 'react-redux';
@@ -15,6 +15,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 function MenuItem({ name, price, description, addItemToCart }) {
+  const [itemChosen, setItemChosen] = useState(false);
 
   const handleClick = (event) => {
     const item = {
@@ -22,6 +23,14 @@ function MenuItem({ name, price, description, addItemToCart }) {
       price
     }
     addItemToCart(item);
+    setItemChosen(true);
+  }
+
+  const showLoading = () => {
+    setTimeout(() => {
+      setItemChosen(false);
+    }, 2000);
+    return <Loading/>
   }
 
   return (
@@ -38,13 +47,17 @@ function MenuItem({ name, price, description, addItemToCart }) {
         <p className={styles.description}>
           {description}
         </p>
-        {/* <button 
-          className={styles.button}
-          onClick={handleClick}
-        >
-          +
-        </button> */}
-        <Loading/>
+        {
+          itemChosen 
+            ?
+              showLoading()
+            : <button 
+                className={styles.button}
+                onClick={handleClick}
+              >
+                +
+              </button>  
+        }
       </div>
     </Paper>
   );

@@ -1,7 +1,6 @@
 .root {
   width: 100vw;
-  height: 200px;
-  background-color: blue;
+  height: 80px;
   background-image: url('../public/hero-oven.jpg');
   background-position: 0px -100px;
 }

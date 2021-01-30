@@ -34,10 +34,11 @@
   height: 45px;
   width: 45px;
   border-radius: 100px;
-  background-color: rgb(58, 241, 141);
+  background-color: rgb(15, 133, 25);
   border: 0px;
   cursor: pointer;
   outline: none;
+  color: white;
 }
 
 .button:hover {
