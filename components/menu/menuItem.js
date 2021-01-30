@@ -3,6 +3,8 @@ import styles from '../../styles/MenuItem.module.css';
 import { Paper } from '@material-ui/core';
 import { connect } from 'react-redux';
 import * as actions from '../../redux/actions/actions';
+import Loading from './loading';
+
 
 const mapStateToProps = ({
   reducer: { total, order }
@@ -36,12 +38,13 @@ function MenuItem({ name, price, description, addItemToCart }) {
         <p className={styles.description}>
           {description}
         </p>
-        <button 
+        {/* <button 
           className={styles.button}
           onClick={handleClick}
         >
           +
-        </button>
+        </button> */}
+        <Loading/>
       </div>
     </Paper>
   );
