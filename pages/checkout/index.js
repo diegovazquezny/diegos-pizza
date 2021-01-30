@@ -6,7 +6,7 @@ export default function Menu() {
   return (
     <>
       <Header/>
-        Checkout
+        <p id='top'>Checkout</p>
       <Footer/>
     </>
   )

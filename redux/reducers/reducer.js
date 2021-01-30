@@ -29,12 +29,14 @@ const reducer = (state = initialState, action) => {
     }
       
     case types.REMOVE_ITEM_FROM_CART: {
-      console.log(action.payload);
-      const updatedOrder = state.order.filter(item => item.id !== action.payload);
+      const { itemID } = action.payload;
+      const { itemPrice } = action.payload;
+      const updatedOrder = state.order.filter(item => item.id !== itemID);
       return {
         ...state,
         order: updatedOrder,
-        itemCount: state.itemCount - 1
+        itemCount: state.itemCount - 1,
+        total: state.total - itemPrice
       }
     }
     default:

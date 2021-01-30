@@ -17,7 +17,7 @@ function CartItem({ itemCount, itemName, itemPrice, itemID, removeItemFromCart }
       <TableCell align="right">
         <DeleteForeverIcon
           fontSize='small'
-          onClick={() => removeItemFromCart(itemID)}  
+          onClick={() => removeItemFromCart({itemID, itemPrice})}  
         />
       </TableCell>
       <TableCell align="right">${itemPrice}</TableCell>
