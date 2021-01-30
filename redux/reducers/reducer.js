@@ -8,12 +8,13 @@ export const types = {
 const initialState = {
   total: 0,
   order: [],
-  id: 1000
+  id: 1000,
+  itemCount: 0
 }
 
 const reducer = (state = initialState, action) => {
   switch(action.type) {
-    case types.ADD_ITEM_TO_CART:
+    case types.ADD_ITEM_TO_CART: {
       const item = action.payload;
       item.id = state.id;
       const updatedOrder = [...state.order];
@@ -22,16 +23,20 @@ const reducer = (state = initialState, action) => {
         ...state,
         total: state.total + item.price,
         order: updatedOrder,
-        id: state.id + 1
+        id: state.id + 1,
+        itemCount: state.itemCount + 1
       }
+    }
       
-    case types.REMOVE_ITEM_FROM_CART:
+    case types.REMOVE_ITEM_FROM_CART: {
       console.log(action.payload);
+      const updatedOrder = state.order.filter(item => item.id !== action.payload);
       return {
-        ...state
+        ...state,
+        order: updatedOrder,
+        itemCount: state.itemCount - 1
       }
-
-
+    }
     default:
       return state;
   }

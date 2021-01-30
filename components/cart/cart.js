@@ -5,11 +5,11 @@ import FullCart from './fullCart';
 import { connect } from 'react-redux';
 
 const mapStateToProps = ({
-  reducer: { total }
-}) => ({ total });
+  reducer: { total, itemCount }
+}) => ({ total, itemCount });
 
-function Cart({ total }) {
-  const [cart, setCart] = useState(total);
+function Cart({ itemCount }) {
+  const [cart, setCart] = useState(itemCount);
 
   return (
     <div className={styles.root}>

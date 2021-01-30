@@ -3,14 +3,15 @@ import { connect } from 'react-redux';
 import CartItem from './cartItem';
 import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
+import { useRouter } from 'next/router';
 
 const mapStateToProps = ({
   reducer: { order }
 }) => ({ order });
 
 function FullCart({order}) {
-  console.log(order);
-
+  const router = useRouter();
+  console.log(router.route);
   const generateCartItems = () => {
     return order.map((item, i) => {
       return (
@@ -33,7 +34,12 @@ function FullCart({order}) {
           {generateCartItems()}
         </TableHead>
       </Table>
-      <button className={styles.checkoutButton}>Checkout</button>
+      <button 
+        className={styles.checkoutButton}
+        onClick={()=>router.push('/checkout')}
+      >
+        Checkout
+      </button>
     </div>
   );
 }

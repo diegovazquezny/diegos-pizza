@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 300px;
+  min-height: 300px;
+  height: 100%;
 }
 
 .cartContainer {
@@ -49,4 +50,8 @@
 
 .orderSubtotal {
   font-size: 1.1rem;
+}
+
+.checkoutButton {
+  margin-top: 10px;
 }
