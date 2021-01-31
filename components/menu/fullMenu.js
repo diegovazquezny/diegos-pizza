@@ -50,7 +50,7 @@ export default function FullMenu() {
             })
           }
         </Paper>
-        : 'Loading'
+        : <div className={styles.loading}/>
       }
     </>
   )

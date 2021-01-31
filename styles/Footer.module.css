@@ -24,6 +24,7 @@
   display: flex;
   width: 200px;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .socialImage {
@@ -34,6 +35,13 @@
 }
 
 .seeMore {
+  font-size: 0.9rem;
   margin-top: 10px;
   text-decoration: underline;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  margin: 5px;
+  text-align: center;
 }
