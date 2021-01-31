@@ -15,13 +15,13 @@ const articles = [
     id: 'dess'
   },
   {
-    title: 'Delicous Sandwiches',
+    title: 'Delicous Heros',
     description: `
       Not in the mood for pizza? We got you covered. Our diverse selection
-      of sandwiches will definitely hit the spot.
+      of heros will definitely hit the spot.
     `,
     img: './articles/sandwich.png',
-    url: '/menu#sandwiches',
+    url: '/menu#heros',
     id: 'sand'
   },
   {

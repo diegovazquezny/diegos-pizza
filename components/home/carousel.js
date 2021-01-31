@@ -22,7 +22,7 @@ export default function CarouselMUI(props) {
 
   const items = [
     {
-      title: 'Try our Supreme',
+      title: 'Supreme Pizza',
       description: 'Fresh vegetables and pepperoni',
       img: '/carousel/supr.png',
       url: '/menu#pizza',
