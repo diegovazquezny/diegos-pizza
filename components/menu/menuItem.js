@@ -49,8 +49,7 @@ function MenuItem({ name, price, description, addItemToCart }) {
         </p>
         {
           itemChosen 
-            ?
-              showLoading()
+            ? showLoading()
             : <button 
                 className={styles.button}
                 onClick={handleClick}

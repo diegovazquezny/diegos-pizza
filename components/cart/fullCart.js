@@ -11,22 +11,22 @@ const mapStateToProps = ({
   reducer: { order }
 }) => ({ order });
 
+const generateCartItems = (order) => {
+  return order.map((item, i) => {
+    return (
+      <CartItem
+        key={`I${i}`}
+        itemCount={'1'}
+        itemName={item.name}
+        itemPrice={item.price}
+        itemID={item.id}
+      />  
+    );  
+  })
+}
+
 function FullCart({order}) {
   const router = useRouter();
-  console.log(router.route);
-  const generateCartItems = () => {
-    return order.map((item, i) => {
-      return (
-        <CartItem
-          key={`I${i}`}
-          itemCount={'1'}
-          itemName={item.name}
-          itemPrice={item.price}
-          itemID={item.id}
-        />  
-      );  
-    })
-  }
 
   return (
     <div className={styles.cartContainer}>
@@ -36,7 +36,7 @@ function FullCart({order}) {
             <p className={styles.cartTitle}>Your order</p>
             <Table>
               <TableHead>
-                {generateCartItems()}
+                {generateCartItems(order)}
                 <CartTotal/>
               </TableHead>
             </Table>

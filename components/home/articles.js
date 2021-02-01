@@ -8,7 +8,7 @@ const articles = [
     title: 'World Class Desserts',
     description: `
       Nothing is better than finishing off a few slices of pizza with a
-      delicous dessert. Try our ice cream or our cookies.
+      delicous dessert. Try our brownies or cannolis.
     `,
     img: './articles/brownies.png',
     url: '/menu#desserts',

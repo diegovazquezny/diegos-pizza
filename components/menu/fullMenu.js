@@ -13,6 +13,7 @@ export default function FullMenu() {
       fetch('/api/menu')
         .then(res => res.json())
         .then(data => {
+          console.log(data);
           setMenuList(data);
           setFetchedMenu(true);
         })
