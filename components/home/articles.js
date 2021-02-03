@@ -8,14 +8,14 @@ const articles = [
     title: 'World Class Desserts',
     description: `
       Nothing is better than finishing off a few slices of pizza with a
-      delicous dessert. Try our ice cream or our cookies.
+      delicious dessert. Try our ice cream or our cookies.
     `,
     img: './articles/brownies.png',
     url: '/menu#desserts',
     id: 'dess'
   },
   {
-    title: 'Delicous Heros',
+    title: 'Delicious Heros',
     description: `
       Not in the mood for pizza? We got you covered. Our diverse selection
       of heros will definitely hit the spot.
