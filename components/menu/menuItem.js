@@ -14,13 +14,13 @@ const mapDispatchToProps = dispatch => ({
   addItemToCart: (item) => dispatch(actions.addItemToCart(item)),
 });
 
-function MenuItem({ name, price, description, addItemToCart }) {
+function MenuItem({ addItemToCart, product }) {
   const [itemChosen, setItemChosen] = useState(false);
 
   const handleClick = (event) => {
     const item = {
-      name,
-      price
+      name: product.name,
+      price: product.price
     }
     addItemToCart(item);
     setItemChosen(true);
@@ -37,20 +37,19 @@ function MenuItem({ name, price, description, addItemToCart }) {
     <Paper className={styles.root}>
       <div className={styles.topContainer}>
         <p className={styles.name}>
-          {name}
+          {product.name}
         </p>
         <p className={styles.name}>
-          ${price}
+          ${product.price}
         </p>
       </div>
       <div className={styles.bottomContainer}>
         <p className={styles.description}>
-          {description}
+          {product.description}
         </p>
         {
           itemChosen 
-            ?
-              showLoading()
+            ? showLoading()
             : <button 
                 className={styles.button}
                 onClick={handleClick}

@@ -38,7 +38,7 @@ export default function Articles() {
   return (
     <div className={styles.root}>
       {
-        articles.map(article => {
+        articleData.map(article => {
           return (
             <Paper key={article.id} className={styles.article}>
               <h2

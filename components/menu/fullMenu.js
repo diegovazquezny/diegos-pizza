@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import MenuItem from './menuItem';
 import styles from '../../styles/FullMenu.module.css';
 import { Paper } from '@material-ui/core';
 import MenuNav from '../../components/menu/menuNav';
+import MenuItemsList from './menuItemsList';
 
 export default function FullMenu() {
   const [fetchedMenu, setFetchedMenu] = useState(false);
@@ -33,16 +33,7 @@ export default function FullMenu() {
                   <div className={styles.menuItemsContainer}>
                     <h3 className={styles.categoryName}>{type.category}</h3>
                     <div className={styles.menuItemsWrapper}>
-                      {type.options.map((option, i) => {
-                        return (
-                          <MenuItem
-                            name={option.name}
-                            price={option.price}
-                            description={option.description}
-                            key={`o${i}`}
-                          />
-                        )
-                      })}
+                      {<MenuItemsList menuItems={type.options}/>}
                     </div>
                   </div>
                 </div>
